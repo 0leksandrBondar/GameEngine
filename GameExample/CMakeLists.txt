@@ -7,7 +7,8 @@ set(SOURCES main.cpp)
 add_executable(GameExample ${SOURCES})
 
 target_link_libraries(GameExample PRIVATE
-        BondEngine::GLWrapper
+        BondEngine::Window
+        BondEngine::Graphics
 )
 
 # TODO: move it to engine lib

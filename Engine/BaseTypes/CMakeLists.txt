@@ -6,6 +6,7 @@ file(
         "NonMoveable/*.cpp"
         "Transformable/*.h"
         "Transformable/*.cpp"
+        "Singleton/*.h"
 )
 
 add_library(BaseTypes STATIC ${Sources})
