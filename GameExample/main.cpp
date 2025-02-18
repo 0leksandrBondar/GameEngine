@@ -3,12 +3,16 @@
 #include "GLWrapper/ShaderProgram/ShaderProgram.h"
 #include "Graphics/Objects3D/Cube.h"
 
+#include <iostream>
+
 int main()
 {
     const auto window = new BondEngine::Window(1300, 800, "BondEngine");
     const auto shader = new BondEngine::ShaderProgram("Assets/Shaders/Vertex3D.vert",
                                                       "Assets/Shaders/Fragment3D.frag");
     const auto cube = new BondEngine::Cube(shader);
+
+    std::cout << (const char*)glGetString(GL_RENDERER);
 
     glEnable(GL_DEPTH_TEST);
 
