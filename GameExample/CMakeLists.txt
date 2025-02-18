@@ -9,6 +9,8 @@ add_executable(GameExample ${SOURCES})
 target_link_libraries(GameExample PRIVATE
         BondEngine::Window
         BondEngine::Graphics
+        Vulkan::Headers
+        Vulkan::Loader
 )
 
 # TODO: move it to engine lib
